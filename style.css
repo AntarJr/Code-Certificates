@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #e4e1e1;
+    background-image:url(1338701.png) ;
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+    background-attachment: fixed;
+}
+  
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin: auto;
+    color: rgb(247, 247, 247); /* Keep this color for h1 */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1),  /* Reduced glow */
+                 0 0 10px rgba(255, 255, 255, 0.1), /* Reduced glow */
+                 4px 4px 6px rgba(0, 0, 0, 1);    /* Black shadow */
+}
+  
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white !important; /* Force h2 color to black */
+    font-weight: 500 !important;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9),  /* Reduced glow */
+                 0 0 10px rgba(255, 255, 255, 0.1), /* Reduced glow */
+                 4px 4px 6px rgba(0, 0, 0, 0.9);    /* Black shadow */
+    margin-top: 10px;
+}
+  
+.header {
+    padding: 32px;
+    background-color: #00004b;
+    color: #fff;
+    border-bottom: 4px solid  #777978;
+    background: linear-gradient(0deg, rgba(133, 133, 133, 0.8) 30% , rgb(182, 53, 2, 0.8));
+    
+}
+  
+.subsection {
+    padding: 30px 0;
+    text-align: center;
+}
+  
+.sub-header {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(247, 247, 247);
+    position: relative;
+}
+  
+.udemy-header::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: blue; /* Border color for Udemy */
+    margin: 10px auto;
+}
+  
+.manara-header::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: orange; /* Border color for Manara */
+    margin: 10px auto;
+}
+
+.slider {
+    overflow: hidden; /* Hides the extra images outside the viewport */
+    max-width: 100%;
+}
+  
+.gallery {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    gap: 16px;
+    width: 100%;
+}
+  
+.gallery img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+  
+.gallery a {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+}
+  
+
+
+.udemy-logo {
+    width: 50px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align logo vertically with text */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.manara-logo {
+    width: 50px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align logo vertically with text */
+    margin-right: 10px; /* Space between logo and text */
+    margin-bottom: 1px;
+}
